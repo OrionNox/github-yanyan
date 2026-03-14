@@ -1,0 +1,59 @@
+// Online C# Editor for free
+// Write, Edit and Run your C# code using C# Online Compiler
+
+using System;
+
+public class Loplop_Jillian_2G_Assignment3
+{
+    public static void Main(string[] args)
+    {
+        try{
+            Console.Write("First Number: ");
+            int num1 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Second Number: ");
+            int num2 = Convert.ToInt32(Console.ReadLine());
+            int result = 0;
+            
+            Console.WriteLine("1 = +");
+            Console.WriteLine("2 = -");
+            Console.WriteLine("3 = *");
+            Console.WriteLine("4 = /");
+            Console.WriteLine("5 = %");
+            
+            Console.Write("Choose an Operator: ");
+            int op = Convert.ToInt32(Console.ReadLine());
+            switch (op)
+            {
+                case 1:
+                    result = num1 + num2;
+                    break;
+                case 2:
+                   result = num1 - num2;
+                    break;
+                case 3:
+                    result = num1 * num2;
+                    break;
+                case 4:
+                    if (num2 == 0)
+                    {
+                        Console.WriteLine("Cannot be Divided by Zero");
+                    }
+                    result = num1 / num2;
+                    break;
+                case 5:
+                    if (num2 == 0)
+                        {
+                            Console.WriteLine("Cannot be Modulo by Zero");
+                        }
+                    result = num1 % num2;
+                    break;
+                default:
+                    Console.WriteLine("Invalid Operator");
+                    break;
+            }
+            Console.WriteLine(result);
+        }catch(ArithmeticException){
+            Console.WriteLine("Cannot Be");
+        }
+    }
+}

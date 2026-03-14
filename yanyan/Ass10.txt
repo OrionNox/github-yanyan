@@ -1,0 +1,20 @@
+// Online C# Editor for free
+// Write, Edit and Run your C# code using C# Online Compiler
+
+using System;
+
+public class Loplop_Jillian_2G_Assignment10
+{
+    public static void Main(string[] args)
+    {
+        Console.Write("Enter Username: ");
+        string username = Console.ReadLine();
+        if(!string.IsNullOrEmpty(username) && username.Length >= 5 && !username.Contains(" ")){
+            Console.Write("Username is Valid");
+            
+        }else{
+            
+            Console.Write("Username is Invalid");
+        }
+    }
+}

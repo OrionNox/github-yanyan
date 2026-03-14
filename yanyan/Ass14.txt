@@ -1,0 +1,49 @@
+// Online C# Editor for free
+// Write, Edit and Run your C# code using C# Online Compiler
+
+using System;
+
+public class Loplop_Jillian_2G_Assignment14
+{
+    public static void Main(string[] args)
+    {
+        
+        
+        int bal = 5000;
+        
+        bool loop = true;
+        while(loop == true){
+            Console.WriteLine ("MENU");
+            Console.WriteLine ("1.Check Balance");
+            Console.WriteLine ("2.Deposit");
+            Console.WriteLine ("3.Withdraw");
+            Console.WriteLine ("4.Exit");
+            int option = Convert.ToInt32(Console.ReadLine());
+            switch(option){
+                case 1:
+                    Console.WriteLine ("Current Balance: " + bal);
+                    break;
+                case 2:
+                    Console.WriteLine("How much would you deposit? ");
+                    int dep = Convert.ToInt32(Console.ReadLine());
+                    bal = bal + dep;
+                    break;
+                case 3:
+                    Console.WriteLine("How much would you withdraw? ");
+                    int withd = Convert.ToInt32(Console.ReadLine());
+                    if(withd > bal){
+                        Console.WriteLine("insufficient Balance");
+                    }
+                    bal = bal - withd;
+                    break;
+                case 4:
+                    Console.Write("Come Again!");
+                    loop = false;
+                    break;
+                default:
+                    Console.WriteLine("Invalid Option");
+                    break;
+            }
+        }
+    }
+}

@@ -1,0 +1,34 @@
+// Online C# Editor for free
+// Write, Edit and Run your C# code using C# Online Compiler
+
+using System;
+
+public class Loplop_Jillian_2G_Assignment4
+{
+    public static void Main(string[] args)
+    {
+        int i = 1;
+        int k = 1;
+        
+        Console.WriteLine("while loop");
+        while (i <= 20){
+            if(i % 2 == 0){
+                Console.WriteLine(i);
+            }
+            i++;
+        }
+        
+        Console.WriteLine("do-while loop");
+        do{
+            if(k % 2 == 0){
+               Console.WriteLine(i);
+            }
+            k++;
+        }while(k <= 20);
+        
+        Console.WriteLine("for loop");
+        for(int j = 2; j <= 20; j += 2){
+            Console.WriteLine(j);
+        }
+    }
+}
