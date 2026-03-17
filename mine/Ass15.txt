@@ -1,0 +1,30 @@
+// Online C# Editor for free
+// Write, Edit and Run your C# code using C# Online Compiler
+
+using System;
+
+public class Bao_Juhary_2F_AssignmentTwo_Dimensional_Seating_Chart
+{
+    public static void Main(string[] args)
+    {
+        int[,] seats = new int[3,4];
+        int seatNum = 1;
+        
+        Console.WriteLine("seating Chart: ");
+        for(int i=0; i < 3; i++){
+            for(int j = 0; j < 4; j++){
+                seats[i, j] = seatNum;
+                Console.Write(seats[i, j] + "\t");
+                seatNum++;
+            }
+            Console.WriteLine();
+        }
+        
+        Console.WriteLine("Enter a row from 0-2: ");
+        int row = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Enter a column from 0-3: ");
+        int col = Convert.ToInt32(Console.ReadLine());
+        
+        Console.WriteLine("seat at [" + row + "," + col + "] is: " + seats[row, col]);
+    }
+}

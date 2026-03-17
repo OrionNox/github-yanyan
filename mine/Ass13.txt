@@ -1,0 +1,30 @@
+// Online C# Editor for free
+// Write, Edit and Run your C# code using C# Online Compiler
+
+using System;
+
+public class Bao_Juhary_2F_AssignmentBirth_year_To_Age_Converter
+{
+    public static void Main(string[] args)
+    {
+        try{
+            Console.Write("Enter Birth Year: ");
+            int birthYear = Convert.ToInt32(Console.ReadLine());
+            
+            Console.WriteLine("Approx age is: " + (2026 - birthYear));
+            
+            int old = 2026 - birthYear;
+            
+            if(old >= 18){
+                Console.Write("Adult");
+                
+            }else if(old >= 13 && old <= 17){
+                Console.Write("Teenage");
+                }else{
+                    Console.Write("Child");
+                    }
+        }catch(Exception e){
+            Console.Write("Not a valid number");
+        }
+    }
+}

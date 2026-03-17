@@ -1,0 +1,23 @@
+// Online C# Editor for free
+// Write, Edit and Run your C# code using C# Online Compiler
+
+using System;
+
+public class Bao_Juhary_2F_AssignmentPassword_Attempt_Checker
+{
+    public static void Main(string[] args)
+    {
+        string pass = "admin123";
+        bool cracked = true;
+        while(cracked == true){
+            Console.Write("Enter Password: ");
+            string password = Console.ReadLine();
+            if(pass == password){
+                Console.WriteLine("Access granted");
+                cracked = false;
+            }else{
+                Console.WriteLine("Try again");
+            }
+        }
+    }
+}

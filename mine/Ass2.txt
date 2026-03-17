@@ -1,0 +1,40 @@
+// Online C# Editor for free
+// Write, Edit and Run your C# code using C# Online Compiler
+
+using System;
+
+public class Bao_Juhary_2F_AssignmentGrade_Evaluator
+{
+    public static void Main(string[] args)
+    {
+        try{
+            Console.Write("Enter Grade: ");
+            int grade = Convert.ToInt32(Console.ReadLine());
+            
+            if (grade >= 75){
+                Console.WriteLine("PASSED!");
+            }else{
+                Console.WriteLine("FAILED!");
+            }
+            
+            if (grade >= 75){
+                if(grade >= 90 && grade <= 100){
+                    Console.Write("Excellent");
+                }
+                if(grade >= 85 && grade <= 89){
+                    Console.Write("Very Good");
+                }
+                if(grade >= 80 && grade <= 84){
+                    Console.Write("Good");
+                }
+                if(grade >= 75 && grade <= 79){
+                    Console.Write("Fair");
+                }
+            }else{
+                Console.Write("Failed");
+            }
+        }catch(Exception e){
+            Console.Write("Invalid Input");
+        }
+    }
+}

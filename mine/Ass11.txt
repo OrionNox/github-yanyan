@@ -1,0 +1,23 @@
+// Online C# Editor for free
+// Write, Edit and Run your C# code using C# Online Compiler
+
+using System;
+
+public class Bao_Juhary_2F_AssignmentSentence_Analyzer
+{
+    public static void Main(string[] args)
+    {
+        Console.WriteLine("Enter A Sentence");
+        string sentence = Console.ReadLine();
+        
+        Console.WriteLine(sentence.Length);
+        Console.WriteLine(sentence.ToUpper());
+        Console.WriteLine(sentence.ToLower());
+        
+        if(sentence.Contains("C#")){
+            Console.Write("Sentence contain C#");
+        }else{
+            Console.Write("Sentence do not contain C#");
+        }
+    }
+}

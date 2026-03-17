@@ -1,0 +1,35 @@
+// Online C# Editor for free
+// Write, Edit and Run your C# code using C# Online Compiler
+
+using System;
+
+public class Bao_Juhary_2F_AssignmentEven_Numbers_Printer
+{
+    public static void Main(string[] args)
+    {
+        int i = 1;
+        int k = 1;
+        
+        Console.WriteLine("while loop");
+        while (i <= 20){
+            if(i % 2 == 0){
+                Console.WriteLine(i);
+            }
+            i++;
+        }
+        Console.WriteLine("-----------------------------");
+        Console.WriteLine("do-while loop");
+        do{
+            if(k % 2 == 0){
+               Console.WriteLine(k);
+            }
+            k++;
+        }while(k <= 20);
+        
+        Console.WriteLine("-----------------------------");
+        Console.WriteLine("for loop");
+        for(int j = 2; j <= 20; j += 2){
+            Console.WriteLine(j);
+        }
+    }
+}

@@ -1,0 +1,37 @@
+// Online C# Editor for free
+// Write, Edit and Run your C# code using C# Online Compiler
+
+using System;
+
+public class Bao_Juhary_2F_AssignmentStudent_Information_Formatter
+{
+    public static void Main(string[] args)
+    {
+        Console.Write("First Name: ");
+        string full_name = Console.ReadLine();
+        Console.Write("Middle Name: ");
+        string mid_name = Console.ReadLine();
+        Console.Write("Last Name: ");
+        string last_name = Console.ReadLine();
+        Console.Write("Age: ");
+        
+        int age = Convert.ToInt32(Console.ReadLine());
+        Console.Write("Height: ");
+        double height = Convert.ToDouble(Console.ReadLine());
+        Console.Write("Year: ");
+        int year = Convert.ToInt32(Console.ReadLine());
+        Console.Write("Section: ");
+        char section = Convert.ToChar(Console.ReadLine());
+        
+        Console.WriteLine(last_name + ", " + full_name + " " + mid_name[0] + ".");
+        
+        Console.WriteLine(age + 1);
+        Console.WriteLine(age * height);
+        if (age >= 18){
+            Console.WriteLine("You're an Adult");
+        }else{
+            Console.WriteLine("You're a Minor");
+        }
+        
+    }
+}

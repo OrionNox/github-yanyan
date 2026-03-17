@@ -1,0 +1,16 @@
+// Online C# Editor for free
+// Write, Edit and Run your C# code using C# Online Compiler
+
+using System;
+using System.Text;
+
+public class Bao_Juhary_2F_AssignmentStringBuilder_Message_Editor
+{
+    public static void Main(string[] args)
+    {
+        StringBuilder test = new StringBuilder("welcome");
+        test.Append(" to C# Programming");
+        test.Replace('o', '*');
+        Console.Write(test.ToString());
+    }
+}
